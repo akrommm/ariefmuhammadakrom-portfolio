@@ -1654,3 +1654,56 @@ body{
     max-width: 130px;
   }
 }
+
+/* Swiiper */
+.swiper-container {
+  width: 100%; /* Full width */
+  max-width: 100%; /* Prevent any overflow */
+  overflow: hidden; /* Hide overflow if any */
+}
+
+.swiper-slide img {
+  width: 100%; /* Mengisi lebar slide */
+  height: auto; /* Menjaga rasio aspek */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff; /* Change the color of the navigation buttons */
+}
+
+.swiper-pagination-bullet {
+    background: #fff; /* Change the pagination bullet color */
+}
+
+/* typing */
+.typing-effect {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: currentColor;
+  }
+}
+
